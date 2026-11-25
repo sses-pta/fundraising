@@ -18,6 +18,7 @@ h1{margin:0;font-size:28px;font-weight:900;letter-spacing:1px}
 h2{margin:0 0 8px;font-size:19px;font-weight:900}
 .tag{font-size:13px;font-weight:700;color:#e07a3f;letter-spacing:3px}
 .mut{color:var(--mut);font-size:14px}
+.route{display:inline-block;margin:6px 0 4px;padding:3px 12px;border-radius:999px;background:var(--tint);color:var(--acc);font-size:14px;font-weight:700;letter-spacing:1px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
 .chip,.copy{font:inherit;font-size:16px;font-weight:700;padding:8px 16px;border-radius:999px;border:2px solid var(--btn);background:transparent;color:var(--btn);cursor:pointer}
 .chip.on{background:var(--btn);color:var(--btnink)}
@@ -38,7 +39,8 @@ summary{cursor:pointer;padding:10px 14px;font-weight:900;display:flex;justify-co
   <div>
     <div class="tag">雙溪號 · 115 學年度</div>
     <h1>搭上雙溪號</h1>
-    <div class="mut">一張車票，陪孩子坐滿一整年。本募款採自願參加，絕無強迫。</div>
+    <div class="route">九月微風 → 六月鳳凰花</div>
+    <div class="mut">每位孩子都是 S-Pass 的乘客，全年活動都能上車。捐款就像加值。本募款採自願參加，絕無強迫。</div>
   </div>
 
   <section class="card">
@@ -77,10 +79,10 @@ summary{cursor:pointer;padding:10px 14px;font-weight:900;display:flex;justify-co
 (function(){
   function fmt(n){return n.toLocaleString('en-US');}
   var data=[
-    ['開心上學線','#e07a3f',[['開學禮',19500],['開學新生禮',3000],['其他活動佈置（萬聖節等）',10000],['體育發表會各項支出',24750],['兒童節活動費',19500],['期末音樂會',50000],['畢業典禮佈置',15000]]],
+    ['開心上學線','#e07a3f',[['開學禮',19500],['開學新生禮',3000],['其他活動佈置（萬聖節等）',10000],['體育發表會各項支出',25500],['兒童節活動費',19500],['期末音樂會',50000],['畢業典禮佈置',15000]]],
     ['學習成長線','#3f8f6b',[['補助學校社團',10000],['圖書館活動費',5000],['校際賽事活動補助',9000],['校際賽事補助費（誤餐）',4500],['弱勢家庭活動助學金',5000],['畢業生活動費（畢業旅行）',3600],['畢業生獎勵',13000]]],
-    ['安心校園線','#3d6fb0',[['本會活動費（含志工成長活動）',20000],['校園環境清潔費',10000],['學校環境維護費用',50000],['教師節敬師禮',18000],['教職員工誤餐費（家長日、音樂會）',15750]]],
-    ['看不見的後盾','#8a857c',[['特別費',20000],['文創商品製作費',20000],['校長遴選（每 4 年一次）',10000],['慶弔費',4800],['雜支',3000],['家長聯合會會費',505]]]
+    ['安心校園線','#3d6fb0',[['本會活動費（含志工成長活動）',20000],['校園環境清潔費',10000],['學校環境維護費用',50000],['教師節敬師禮',18000],['教職員工誤餐費（家長日、音樂會、體育發表會）',15750],['志工保險',4500]]],
+    ['看不見的後盾','#8a857c',[['特別費（含期末烤 Pizza 等）',20000],['文創商品製作費',20000],['校長遴選（每 4 年一次）',20000],['校際交流車資',5000],['參訪招待費',5000],['慶弔費',4800],['雜支',3000],['家長聯合會會費',505]]]
   ];
   var all=0,html='';
   data.forEach(function(d){
